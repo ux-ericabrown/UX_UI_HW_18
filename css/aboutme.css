@@ -1,0 +1,112 @@
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #BD4A32;
+    color: white;
+  }
+
+  body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/IMG_6545.JPG);
+
+  /* Set a specific height */
+  height: 70%;
+  max-width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.logoImage {
+  float: left;
+}
+
+.headerBox {
+  margin-bottom: 50px;
+}
+
+.leftBox {
+  float: left;
+  max-width: 50%;
+}
+
+.h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  padding-left: 3%;
+}
+
+.h5 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.p {
+  font-size: 12px;
+}
+
+.aboutCopy {
+  padding-left: 5%;
+  float: left;
+}
+
+.rightBox {
+  float: right;
+  padding-right: 5%;
+  position: absolute;
+  right: 15%;
+}
+
+#workGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "bookcases bedroom patio"
+  "couches couches patio"
+  "desks desks desks"
+  ;
+}
